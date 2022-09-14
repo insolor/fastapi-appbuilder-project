@@ -1,4 +1,4 @@
-import os
+from pathlib import Path
 
 from decouple import config
 from flask_appbuilder.security.manager import (
@@ -9,14 +9,14 @@ from flask_appbuilder.security.manager import (
     AUTH_REMOTE_USER,
 )
 
-basedir = os.path.abspath(os.path.dirname(__file__))
+basedir = Path(__file__).parent.absolute()
 
 # Your App secret key
 SECRET_KEY = config("SECRET_KEY")
 
 # The SQLAlchemy connection string.
 SQLALCHEMY_DATABASE_URI = config("SQLALCHEMY_DATABASE_URI")
-# SQLALCHEMY_DATABASE_URI = "sqlite:///" + os.path.join(basedir, "app.db")
+# SQLALCHEMY_DATABASE_URI = "sqlite:///" + str(basedir / "app.db")
 # SQLALCHEMY_DATABASE_URI = 'mysql://myapp@localhost/myapp'
 # SQLALCHEMY_DATABASE_URI = 'postgresql://root:password@localhost/myapp'
 
@@ -85,10 +85,10 @@ LANGUAGES = {
 # Image and file configuration
 # ---------------------------------------------------
 # The file upload folder, when using models with files
-UPLOAD_FOLDER = basedir + "/app/static/uploads/"
+UPLOAD_FOLDER = basedir / "app/static/uploads/"
 
 # The image upload folder, when using models with images
-IMG_UPLOAD_FOLDER = basedir + "/app/static/uploads/"
+IMG_UPLOAD_FOLDER = basedir / "app/static/uploads/"
 
 # The image upload url, when using models with images
 IMG_UPLOAD_URL = "/static/uploads/"
