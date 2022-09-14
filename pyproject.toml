@@ -10,7 +10,15 @@ Flask-AppBuilder = "^4.1.4"
 python-decouple = "^3.6"
 
 [tool.poetry.dev-dependencies]
+black = "^22.8.0"
+isort = "^5.10.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = "black"

@@ -1,12 +1,12 @@
 import os
-from decouple import config
 
+from decouple import config
 from flask_appbuilder.security.manager import (
-    AUTH_OID,
-    AUTH_REMOTE_USER,
     AUTH_DB,
     AUTH_LDAP,
     AUTH_OAUTH,
+    AUTH_OID,
+    AUTH_REMOTE_USER,
 )
 
 basedir = os.path.abspath(os.path.dirname(__file__))
