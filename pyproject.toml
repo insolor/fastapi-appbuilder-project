@@ -10,7 +10,7 @@ Flask-AppBuilder = "^4.3.11"
 python-decouple = "^3.6"
 
 [tool.poetry.dev-dependencies]
-black = "^22.8.0"
+black = "^24.3.0"
 isort = "^5.10.1"
 
 [build-system]
