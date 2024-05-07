@@ -205,21 +205,21 @@ dotenv = ["python-dotenv"]
 
 [[package]]
 name = "flask-appbuilder"
-version = "4.3.11"
+version = "4.4.1"
 description = "Simple and rapid application development framework, built on top of Flask. includes detailed security, auto CRUD generation for your models, google charts and much more."
 optional = false
 python-versions = "~=3.7"
 files = [
-    {file = "Flask-AppBuilder-4.3.11.tar.gz", hash = "sha256:193d72e953b5100809df89ec4c8b62c7617c24998a3b501ad85c49ed2aa73fc5"},
-    {file = "Flask_AppBuilder-4.3.11-py3-none-any.whl", hash = "sha256:9630b19e7fee1bfd03982ff9d48309e5eaf0302594542072385dc5d7073fd700"},
+    {file = "Flask-AppBuilder-4.4.1.tar.gz", hash = "sha256:a64d4c3b5197547744c7c41f7eb0fe0206ba1677369ce47903dd08c3c9b753bd"},
+    {file = "Flask_AppBuilder-4.4.1-py3-none-any.whl", hash = "sha256:6ebdb384a23c0e111736ac36f6de04f02d40ac2976feedbdd473d8ba0201dd92"},
 ]
 
 [package.dependencies]
 apispec = {version = ">=6.0.0,<7", extras = ["yaml"]}
 click = ">=8,<9"
 colorama = ">=0.3.9,<1"
-email-validator = ">=1.0.5,<2"
-Flask = ">=2,<2.3.0"
+email-validator = ">=1.0.5"
+Flask = ">=2,<3.0.0"
 Flask-Babel = ">=1,<3"
 Flask-JWT-Extended = ">=4.0.0,<5.0.0"
 Flask-Limiter = ">3,<4"
@@ -228,13 +228,13 @@ Flask-SQLAlchemy = ">=2.4,<3"
 Flask-WTF = ">=0.14.2,<2"
 jsonschema = ">=3,<5"
 marshmallow = ">=3.18.0,<4"
-marshmallow-sqlalchemy = ">=0.22.0,<0.27.0"
+marshmallow-sqlalchemy = ">=0.22.0,<0.29.0"
 prison = ">=0.2.1,<1.0.0"
 PyJWT = ">=2.0.0,<3.0.0"
 python-dateutil = ">=2.3,<3"
 SQLAlchemy = "<1.5"
 sqlalchemy-utils = ">=0.32.21,<1"
-werkzeug = "<3"
+werkzeug = "<4"
 WTForms = "<4"
 
 [package.extras]
@@ -1325,4 +1325,4 @@ email = ["email-validator"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "2269ea56f419a594811b08fa8fd099b9187f266420067137baff43cfab01f271"
+content-hash = "559d89fe0e353d5a39c3e6922a084e9b9012c5bed46984fcb2b57fae0e109641"

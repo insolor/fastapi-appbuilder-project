@@ -6,7 +6,7 @@ authors = ["insolor <insolor@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-Flask-AppBuilder = "^4.3.11"
+Flask-AppBuilder = "^4.4.1"
 python-decouple = "^3.6"
 
 [tool.poetry.dev-dependencies]
